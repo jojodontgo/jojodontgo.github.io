@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="t">
+  <title id="t">Finance Hub</title>
+  <!-- Tile in the Design System accent blue -->
+  <rect width="120" height="120" rx="26" fill="#2b55c9"/>
+  <!-- Roof: the household -->
+  <path d="M22 56 L60 26 L98 56" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Envelope as the house: bills and payment emails, kept at home -->
+  <rect x="33" y="52" width="54" height="40" rx="6" fill="none" stroke="#ffffff" stroke-width="7"/>
+  <path d="M35 56 L60 74 L85 56" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Approved: nothing is recorded until a person says so -->
+  <circle cx="90" cy="88" r="17" fill="#ffffff" stroke="#2b55c9" stroke-width="4"/>
+  <path d="M82 88 L88 94 L99 82" fill="none" stroke="#1d7444" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

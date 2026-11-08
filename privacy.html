@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f6f5f2">
+<title>Finance Hub privacy policy</title>
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="design/tokens.css">
+<link rel="stylesheet" href="design/base.css">
+<link rel="stylesheet" href="design/theme.local.css">
+</head>
+<body>
+<main class="page">
+  <header class="header">
+    <div>
+      <h1>Privacy policy</h1>
+      <p class="sub">Finance Hub · last updated 8 November 2026</p>
+    </div>
+    <a href="index.html"><img src="logo.svg" alt="Finance Hub home" width="56" height="56"></a>
+  </header>
+
+  <section class="grid">
+    <article class="card">
+      <p class="name">Who uses it</p>
+      <p class="detail">Finance Hub is a private tool run by one household for its own two members. It is not offered
+        to anyone else. Its only users are the two people whose Gmail accounts it reads, and each of them gives
+        permission separately.</p>
+    </article>
+
+    <article class="card">
+      <p class="name">What Google data it accesses</p>
+      <p class="detail">Finance Hub asks for one Google permission: read-only access to Gmail
+        (<code>gmail.readonly</code>). With it, Finance Hub:</p>
+      <ul class="detail">
+        <li>searches Gmail for emails from a short list of senders the household chose (payment apps, billers and
+          banks) and downloads only those emails;</li>
+        <li>once, while it is being set up, reads only the sender address of recent payment and bill emails, to
+          count which companies send them, so the household can choose that list.</li>
+      </ul>
+      <p class="detail">It cannot send, change, label or delete email, and it does not read other emails.</p>
+    </article>
+
+    <article class="card">
+      <p class="name">How it uses that data</p>
+      <ul class="detail">
+        <li>It checks that each email really comes from the sender it claims (its digital signature), and ignores
+          any that fail.</li>
+        <li>It picks out the amount, date and payee, using fixed rules or a language model that runs on the
+          household's own computer. No Gmail data is sent to an online AI service for this.</li>
+        <li>It shows the result, with the email's text, on a private page that only the two household members can
+          open. Nothing goes into their budget until one of them approves it.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <p class="name">Where it is kept, and for how long</p>
+      <ul class="detail">
+        <li>On one computer in the household's home, reachable only on their private network.</li>
+        <li>Downloaded emails are deleted after 30 days. Email text shown for approval is removed after 30 days.
+          Approved amounts, dates and payees stay in the household's budget.</li>
+        <li>Backups are encrypted on that computer before being copied to the household's own cloud storage, which
+          therefore holds only encrypted data.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <p class="name">Sharing</p>
+      <p class="detail">Gmail data is not sold, not used for advertising, not used to decide creditworthiness or
+        lending, and not used to train AI models. It is not given to anyone outside the household, with one
+        exception the household controls: to write the fixed rules, the owner may share a few <em>redacted</em>
+        sample emails with an AI coding assistant. Before that, every digit is replaced, email addresses and the
+        household's names are removed, and the owner reads each sample and removes anything else personal.</p>
+      <p class="detail">Finance Hub's use and transfer of information received from Google APIs adheres to the
+        <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data
+        Policy</a>, including the Limited Use requirements.</p>
+    </article>
+
+    <article class="card">
+      <p class="name">Stopping access</p>
+      <p class="detail">Either person can stop Finance Hub reading their Gmail at any time: in their Google Account,
+        open Security, then third-party connections, and remove Finance Hub. They can also ask the household to
+        delete the emails and items already stored from their account.</p>
+    </article>
+
+    <article class="card">
+      <p class="name">Changes and contact</p>
+      <p class="detail">If this policy changes, the date at the top changes too. Questions go to the support email
+        shown on Finance Hub's Google sign-in screen.</p>
+    </article>
+  </section>
+</main>
+</body>
+</html>

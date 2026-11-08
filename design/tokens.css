@@ -1,0 +1,77 @@
+/* Design System tokens.css v1.0.0 sha256:9371c475a497 - copied by Design System\sync.ps1; do not edit here. Override tokens in theme.local.css. */
+/* Design System tokens. Source of truth: C:\Claude Projects\Design System\tokens.css
+   Edit here, run sync.ps1, then rebuild/redeploy the consumers. A project may override
+   individual --tokens in its own design/theme.local.css (tokens only, no component CSS). */
+
+:root {
+  /* color: light */
+  --bg: #f6f5f2;
+  --surface: #ffffff;
+  --surface-2: #efede8;
+  --text: #1c1d20;
+  --muted: #5b5e66;
+  --line: #dedbd3;
+  --accent: #2b55c9;
+  --accent-ink: #ffffff;
+  --ok: #1d7444;      --ok-bg: #e3f3e8;
+  --warn: #8f5400;    --warn-bg: #fbefd9;
+  --fail: #b3261e;    --fail-bg: #fbe4e1;
+  --info: #2b55c9;    --info-bg: #e4ebfb;
+  --unknown: #5b5e66; --unknown-bg: #ebeae6;
+  --shadow: 0 1px 2px rgb(20 20 25 / .06), 0 2px 8px rgb(20 20 25 / .05);
+  --theme-color: #f6f5f2;   /* mirrors --bg for <meta name="theme-color"> (CSS can't feed a meta tag; a test keeps them equal) */
+
+  /* spacing, 4 px base */
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 24px; --s6: 32px; --s7: 48px;
+  /* shape */
+  --r-card: 14px; --r-ctl: 10px; --r-pill: 999px;
+  /* type: system stack only, no web fonts */
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, "Cascadia Mono", "SF Mono", Menlo, Consolas, monospace;
+  --t-xs: 12px; --t-sm: 14px; --t-md: 16px; --t-lg: 20px; --t-xl: 24px;
+  /* motion */
+  --dur: 150ms; --ease: cubic-bezier(.2, .7, .2, 1);
+  /* touch + layout */
+  --tap: 44px;
+  --page-max: 1200px;
+}
+
+/* color: dark. Applies by system preference unless the page forces light with data-theme="light". */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #14161a;
+    --surface: #1d2026;
+    --surface-2: #272b33;
+    --text: #ecebe6;
+    --muted: #a3a7b0;
+    --line: #343944;
+    --accent: #8eaaff;
+    --accent-ink: #10131a;
+    --ok: #63d394;      --ok-bg: #173325;
+    --warn: #f2b65c;    --warn-bg: #3a2c12;
+    --fail: #ff8f86;    --fail-bg: #3d1d1b;
+    --info: #8eaaff;    --info-bg: #1b2a45;
+    --unknown: #a3a7b0; --unknown-bg: #2a2d33;
+    --shadow: 0 1px 2px rgb(0 0 0 / .3);
+    --theme-color: #14161a;
+  }
+}
+/* Same dark values, forced by data-theme="dark". Keep identical to the block above (test.mjs checks). */
+:root[data-theme="dark"] {
+  --bg: #14161a;
+  --surface: #1d2026;
+  --surface-2: #272b33;
+  --text: #ecebe6;
+  --muted: #a3a7b0;
+  --line: #343944;
+  --accent: #8eaaff;
+  --accent-ink: #10131a;
+  --ok: #63d394;      --ok-bg: #173325;
+  --warn: #f2b65c;    --warn-bg: #3a2c12;
+  --fail: #ff8f86;    --fail-bg: #3d1d1b;
+  --info: #8eaaff;    --info-bg: #1b2a45;
+  --unknown: #a3a7b0; --unknown-bg: #2a2d33;
+  --shadow: 0 1px 2px rgb(0 0 0 / .3);
+  --theme-color: #14161a;
+}
+@media (prefers-reduced-motion: reduce) { :root { --dur: 0ms; } }
